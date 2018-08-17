@@ -573,4 +573,71 @@ class CI_URI {
 	/**
 	 * Segment Array
 	 *
-	 * @return	array	CI_URI::$segm
+	 * @return	array	CI_URI::$segments
+	 */
+	public function segment_array()
+	{
+		return $this->segments;
+	}
+
+	// --------------------------------------------------------------------
+
+	/**
+	 * Routed Segment Array
+	 *
+	 * @return	array	CI_URI::$rsegments
+	 */
+	public function rsegment_array()
+	{
+		return $this->rsegments;
+	}
+
+	// --------------------------------------------------------------------
+
+	/**
+	 * Total number of segments
+	 *
+	 * @return	int
+	 */
+	public function total_segments()
+	{
+		return count($this->segments);
+	}
+
+	// --------------------------------------------------------------------
+
+	/**
+	 * Total number of routed segments
+	 *
+	 * @return	int
+	 */
+	public function total_rsegments()
+	{
+		return count($this->rsegments);
+	}
+
+	// --------------------------------------------------------------------
+
+	/**
+	 * Fetch URI string
+	 *
+	 * @return	string	CI_URI::$uri_string
+	 */
+	public function uri_string()
+	{
+		return $this->uri_string;
+	}
+
+	// --------------------------------------------------------------------
+
+	/**
+	 * Fetch Re-routed URI string
+	 *
+	 * @return	string
+	 */
+	public function ruri_string()
+	{
+		return ltrim(load_class('Router', 'core')->directory, '/').implode('/', $this->rsegments);
+	}
+
+}
