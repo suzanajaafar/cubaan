@@ -102,28 +102,29 @@ if($this->session->userdata("user_level") == 1)
 	<ul class="treeview-menu">
 		<li><a href="<?= base_url()?>index.php/adm/p1001"><i class="fa fa-circle-o"></i>Users</a></li>
 		<li><a href="<?= base_url()?>index.php/adm/p1002"><i class="fa fa-circle-o"></i>System Settings</a></li>
-		<li><a href="#"><i class="fa fa-share"></i>References<span
-				class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i>
-			</span> </a>
+		<li><a href="#"><i class="fa fa-share"></i>
+			References
+			<span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i></span> 
+			</a>
 			<ul class="treeview-menu">
 				<li><a href="<?= base_url()?>index.php/adm/r1001" onclick=""><i class="fa fa-circle-o"></i>Industry Type</a></li>
 				<li><a href="<?= base_url()?>index.php/adm/r1002" onclick=""><i class="fa fa-circle-o"></i>Country / State</a></li>
-				<li><a href="<?= base_url()?>index.php/adm/r1006" onclick=""><i class="fa fa-circle-o"></i>Company Link Type</a></li>
-				<li><a href="<?= base_url()?>index.php/adm/r1003" onclick=""><i class="fa fa-circle-o"></i>Customer Type</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1003" onclick=""><i class="fa fa-circle-o"></i>Company Link Type</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Customer Type</a></li>
 				
-				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Cost Item</a></li>
-				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Cost Sub-item</a></li>
-				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Other Cost Item</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1005" onclick=""><i class="fa fa-circle-o"></i>Cost Item</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1006" onclick=""><i class="fa fa-circle-o"></i>Cost Sub-item</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1007" onclick=""><i class="fa fa-circle-o"></i>Other Cost Item</a></li>
 				
-				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Contact Roles</a></li>
-				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Contact Status</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1008" onclick=""><i class="fa fa-circle-o"></i>Contact Roles</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1009" onclick=""><i class="fa fa-circle-o"></i>Contact Status</a></li>
 				
-				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Source</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1010" onclick=""><i class="fa fa-circle-o"></i>Source</a></li>
 				
-				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Program Status</a></li>
-				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Program Type</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1011" onclick=""><i class="fa fa-circle-o"></i>Program Status</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1012" onclick=""><i class="fa fa-circle-o"></i>Program Type</a></li>
 				
-				<li><a href="<?= base_url()?>index.php/adm/r1004" onclick=""><i class="fa fa-circle-o"></i>Business Model</a></li>
+				<li><a href="<?= base_url()?>index.php/adm/r1013" onclick=""><i class="fa fa-circle-o"></i>Business Model</a></li>
 			</ul>
 		</li>
 	</ul>

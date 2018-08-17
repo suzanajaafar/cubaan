@@ -61,7 +61,7 @@ class Adm extends CI_Controller {
 		}
 		
 		$content_header =		"<h1>
-		SenangStok <small> $title_1 </small>
+		".SYSTEM_NAME." <small> $title_1 </small>
 		
 		</h1>
 		<ol class='breadcrumb'>

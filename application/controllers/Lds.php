@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Main extends CI_Controller {
+class Lds extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -26,24 +26,18 @@ class Main extends CI_Controller {
 		$this->load->helper('input_helper');
 	}
 				
-	public function index()
+	public function l101()
 	{
 		$page = "main";
 		$action = "view";
 		
-		//$this->load->model('stock_model');
-		$this->load->model('ref_model');
+		$this->load->model('leads_model');
 		
-		$data["bil_myleads"] = 0;
-		$data["bil_myopportunity"] = 0;
-		$data["bil_mysales"] = 0;
-		$data["mysales_amount"] = 0;
-		$data["bil_customer"] = 0;
-		$data["bil_task"] = 0;
+		
 		
 		$data["content_header"] 		= $this->getContentHeader($page,$action);
-		$data["content_main"] 			= 'main/show_main';//$content;
-		$data["panel_title"] 			= "Dashboard";
+		$data["content_main"] 			= 'leads/new_program';//$content;
+		$data["panel_title"] 			= "New Leads Program";
 		
 		
 		$this->load->view('template/main_layout',$data);
